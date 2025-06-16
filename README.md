@@ -35,10 +35,9 @@ Grad-CAM (Gradient-weighted Class Activation Mapping) was implemented in this pr
 📌 **Note:** Visual heatmaps will be added in future updates.  
 The feature is coded but image output is not included in this version.
 
+
 📁 Folder Structure
-kotlin
-Copy
-Edit
+
 breast_cancer_detection/
 ├── breast_cancer_detection.ipynb
 ├── data/
@@ -47,6 +46,7 @@ breast_cancer_detection/
 │   ├── gradcam_result.png
 │   └── accuracy_loss_graph.png
 ├── README.md
+
 
 🛠️ Tech Stack
 Python 3.x
@@ -61,6 +61,7 @@ OpenCV
 
 Scikit-learn
 
+
 🚀 How to Run the Project
 
 ☁️ Option 2: Run on Google Colab
@@ -72,6 +73,7 @@ Upload your dataset when prompted
 
 Run each cell sequentially using Shift + Enter
 
+
 📌 Project Status
 ✅ Completed – Core functionality and analysis done
 💡 Future Improvements
@@ -82,11 +84,13 @@ Expand dataset and support multi-class classification
 
 Model compression for deployment
 
+
 👩‍💻 Author
 Shalini Gupta
 B.Tech CSE (AI & ML) Student
 📌 GitHub: @shalinifabulous
 📌 LinkedIn: Shalini Gupta
+
 
 📜 License
 This project is licensed under the MIT License
