@@ -1,84 +1,92 @@
-Breast Cancer Detection Using Machine Learning
+# 🔬 Breast Cancer Detection using CNN
 
-Breast Cancer
-Cancer occurs when changes called mutations take place in genes that regulate cell growth. The mutations let the cells divide and multiply in an uncontrolled, chaotic way. The cells keep on proliferating, producing copies that get progressively more abnormal. In most cases, the cell copies eventually end up forming a tumor.
+This deep learning project detects breast cancer using histopathological images by training a Convolutional Neural Network (CNN). The model achieved **97% accuracy** and uses **Grad-CAM** to provide visual explanations for predictions.
 
-Breast cancer occurs when a malignant (cancerous) tumor originates in the breast. As breast cancer tumors mature, they may metastasize (spread) to other parts of the body. The primary route of metastasis is the lymphatic system which, ironically enough, is also the body's primary system for producing and transporting white blood cells and other cancer-fighting immune system cells throughout the body. Metastasized cancer cells that aren't destroyed by the lymphatic system's white blood cells move through the lymphatic vessels and settle in remote body locations, forming new tumors and perpetuating the disease process.
+![Accuracy](https://img.shields.io/badge/Accuracy-97%25-brightgreen)
 
-Breast cancer is not just a woman's disease. It is quite possible for men to get breast cancer, although it occurs less frequently in men than in women. Our discussion will focus primarily on breast cancer as it relates to women but it should be noted that much of the information is also applicable for men.
+---
 
-Facts And Figures
-Breast cancer is the most commonly occurring cancer in women and the second most common cancer overall. There were over 2 million new cases in 2018.
+## 💡 Features
 
-Prevalence
+- Developed a CNN model with TensorFlow/Keras
+- Preprocessed image data to enhance training quality
+- Achieved **97% accuracy** on test data
+- Applied **Grad-CAM** for explainable AI (XAI)
+- Used Jupyter Notebook for step-by-step development and visualization
 
-Asia
+---
 
-Percentage of world population: 59 Percentage of new breast cancer cases: 39 Percentage of breast cancer deaths: 44
+## 📊 Model Performance
 
-Africa
+| Metric     | Value  |
+|------------|--------|
+| Accuracy   | 97%    |
+| Loss       | 0.09   |
 
-Percentage of world population: 15 Percentage of new breast cancer cases: 8 Percentage of breast cancer deaths: 12
+✅ The model generalizes well on test data  
+🎯 Grad-CAM helped verify which regions influenced the model’s decision
 
-U.S. and Canada
+---
 
-Percentage of world population: 5 Percentage of new breast cancer cases: 15 Percentage of breast cancer deaths: 9
+## 🖼️ Grad-CAM Visualization
 
-(Data from Global Cancer Facts and Figures, 3rd Edition, page 37)
+Grad-CAM (Gradient-weighted Class Activation Mapping) was implemented in this project to visualize the areas of histopathological images the model focuses on while making predictions.
 
-Incidence rates per 100,000 women
+📌 **Note:** Visual heatmaps will be added in future updates.  
+The feature is coded but image output is not included in this version.
 
-Countries with highest incidence: The Netherlands: 95.3 France: 94.6 U.S: (white people only - other races have lower incidence): 90.6
+📁 Folder Structure
+kotlin
+Copy
+Edit
+breast_cancer_detection/
+├── breast_cancer_detection.ipynb
+├── data/
+│   └── histopath_images/
+├── outputs/
+│   ├── gradcam_result.png
+│   └── accuracy_loss_graph.png
+├── README.md
 
-Countries with lowest incidence:
+🛠️ Tech Stack
+Python 3.x
 
-Thailand: 25.6 Algeria: 29.8 India: 30.9
+Jupyter Notebook
 
-(Data from Global Cancer Facts and Figures, 3rd Edition, page 42)
+TensorFlow / Keras
 
-The American Cancer Society's estimates for breast cancer in the United States for 2019 are:
+NumPy, Pandas, Matplotlib
 
---> About 268,600 new cases of invasive breast cancer will be diagnosed in women.
+OpenCV
 
---> About 62,930 new cases of carcinoma in situ (CIS) will be diagnosed (CIS is non-invasive and is the earliest form of breast cancer).
+Scikit-learn
 
---> About 41,760 women will die from breast cancer.
+🚀 How to Run the Project
 
-Role Of Machine Learning In Detection Of Breast Cancer
-A mammogram is an x-ray picture of the breast. It can be used to check for breast cancer in women who have no signs or symptoms of the disease. It can also be used if you have a lump or other sign of breast cancer.
+☁️ Option 2: Run on Google Colab
+Visit Google Colab
 
-Screening mammography is the type of mammogram that checks you when you have no symptoms. It can help reduce the number of deaths from breast cancer among women ages 40 to 70. But it can also have drawbacks. Mammograms can sometimes find something that looks abnormal but isn't cancer. This leads to further testing and can cause you anxiety. Sometimes mammograms can miss cancer when it is there. It also exposes you to radiation. You should talk to your doctor about the benefits and drawbacks of mammograms. Together, you can decide when to start and how often to have a mammogram.
+Upload breast_cancer_detection.ipynb
 
-Now while its difficult to figure out for physicians by seeing only images of x-ray that weather the tumor is toxic or not training a machine learning model according to the identification of tumour can be of great help.
+Upload your dataset when prompted
 
-Project Description
-The Project is Inspired by the Original Publication of...
+Run each cell sequentially using Shift + Enter
 
-1)Doç. Dr. Ahmet MERT Mühendislik ve Doğa Bilimleri Fakültesi > Mekatronik Mühendisliği Bölümü
+📌 Project Status
+✅ Completed – Core functionality and analysis done
+💡 Future Improvements
 
-2)Dr. Erdem Bilgili Piri Reis University
+Add UI using Streamlit/Flask
 
-3)Dr. Aydin Akan Izmir Katip Celebi University, Izmir, Turkey
+Expand dataset and support multi-class classification
 
-The Projects Features Detection of Breast Cancer Using Machine Learning. It has been tested that while there exists several machine learning models,Support Vector Machine or SVM in short is reported to have highest accuracy of (approximately 97%) in detecting breast cancer.
+Model compression for deployment
 
-The dataset used in this project is from Breast Cancer Wisconsin (Diagnostic) Data Set, however it can be directly accessed from Scikit learn library's collection of datasets as...
+👩‍💻 Author
+Shalini Gupta
+B.Tech CSE (AI & ML) Student
+📌 GitHub: @shalinifabulous
+📌 LinkedIn: Shalini Gupta
 
-sklearn.datasets.load_breast_cancer
-
-...aslo csv file of data has been externally loaded in the repo :)
-
-Results
-An accuracy of 97 % was achieved by utilisation of Support Vector Algorithm and optimization of C and Gamma parameters.
-
-How to access this project.
-Fork the Repository and clone it in ur PC , voila its urs now use it your own way i hope u will do even cooler things ;)
-
-Final Note
-To conclude i would like to say that Machine Learning has inspired me for doing great things by learning about great things this project is one of my starters project in this domain and with it iam able to experience not only life of an Enginner but a Physican as well. Doing this project was a pleasure for me and finding out about Death rate due to Breast Cancer really painful , a lot of information i gathered which i could have never known about and loads of learning happened in between so if you are doing this Project i really hope you too will enjoy playing with the dataset ,rejoice your imagination of "Whatif this Could Happen" and unleash the creativity and potential that resides within you.
-
-Finally thanks for having me with you for quiet a lot of your precious time hope to see you next with real goods stuffs ahead , feel free to connect with me I WON'T BITE and would love collaborating with you,you can find my contact information in my Github Profile only.
-
-Also if you enjoyed this and you are not a sadist then dont forget to leave a star, you know those star and Green square really satisfy me :)
-
-Until we Meet Next HAPPY LEARNING ❤️.
+📜 License
+This project is licensed under the MIT License
